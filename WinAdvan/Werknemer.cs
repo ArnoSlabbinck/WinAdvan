@@ -9,8 +9,13 @@ namespace WinAdvan
     class Werknemer
     {
         private Salaris salaris1;
-        public Salaris Salaris { get; set; }
 
+        public Salaris Salaris
+        {
+            get { return salaris1; }
+            set { salaris1 = value; }
+        }
+     
         private string naam;
 
         public string Naam
@@ -85,6 +90,8 @@ namespace WinAdvan
         public string Contract()
         {
             return salaris1.SoortContract;
+
         }
+
     }
 }

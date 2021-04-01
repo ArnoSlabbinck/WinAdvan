@@ -9,7 +9,11 @@ namespace WinAdvan
     class Salaris
     {
         private string soortContract = "Maandcontract";
-        public string SoortContract { get; set; }
+
+        public string SoortContract {
+            get { return soortContract; }
+            set { soortContract = value; }
+        }
 
         private double brutobedrag = 2440.55;
 
@@ -23,8 +27,8 @@ namespace WinAdvan
         private int btwPercentage = 21;
 
         public int BtwPercentage {
-            get;
-            set;
+            get { return btwPercentage; }
+            set { btwPercentage = value; }
         }
         public Salaris(string _contract)
         {
